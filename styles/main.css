@@ -1,0 +1,29 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+
+.blurb{
+  background-image: url('../images/widetrees.jpg');
+  height:40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  color:white;
+}
+.card{
+  padding: 0 15vw;
+  background: rgba(0, 0, 0, .4);
+  height: 100%;
+  width: 100%;
+}
+nav {
+  text-align: right;
+}
+.skills{
+  margin:0 auto;
+  width:70vw;
+  text-align: center;
+}
