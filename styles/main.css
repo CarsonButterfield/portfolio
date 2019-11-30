@@ -21,9 +21,18 @@
 }
 nav {
   text-align: right;
+  background: rgba(0, 0, 0, .4);
+  position: absolute;
+  width:100%
+
+}
+nav a {
+  color: white;
+  text-decoration: none;
 }
 .skills{
   margin:0 auto;
   width:70vw;
   text-align: center;
+  font-size:26px;
 }
