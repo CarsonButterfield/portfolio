@@ -36,3 +36,23 @@ nav a {
   text-align: center;
   font-size:26px;
 }
+
+#contact{
+  width:70vw;
+  margin:0 auto;
+  display:flex;
+  flex-direction: column;
+}
+.project{
+  width:70vw;
+  margin: 0 auto;
+  padding:15px
+}
+.projects{
+  background: #013220;
+  color: white;
+}
+.projects h2 {
+  text-align: center;
+  
+}

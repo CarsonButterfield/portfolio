@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/main.css">
   <script defer src="./scripts/app.js"></script>
   <title>Carson Butterfield</title>
@@ -26,6 +27,7 @@
 </section>
 
 <section class='skills'>
+  <h2>Top Skills</h2>
   <div>
     <p> JavaScript ExpressJS React MongoDB </p>
   </div>
@@ -38,27 +40,39 @@
 </section>
 
 <section class="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>BandCamp</h3>
+    <p>An application for local musicians and bands to connect. Bands can search through lists of artists and invite to the band. And artists can search for and apply to join bands. Built using Python, Django and PostgreSQL for the backend. The front end used Jquery and Materialize</p>
+  </div>
 
+  <div class="project">
+    <h3>Wayfarer</h3>
+    <p>A forum based around landmark cities in several countries. Users can make posts in each city and leave comments on those posts as well. Built in the MERN stack.</p>
+  </div>
+
+  <div class="project">
+      <h3>Trakr</h3>
+      <p>A time tracking app for freelancers. Allows users to keep track of multiple projects as well as specific tasks for each project. It allows for users to track there time manually or with a timer built into the app. It then calulates how much the user has earned for each project</p>
+    </div>
 </section>
-<form
+<section id="contact">
+  <form
   action="https://formspree.io/xjvkyrvg"
   method="POST"
->
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-
-
-  <button type="submit">Send</button>
-</form>
-
-
-
+  >
+    <div class="form-group">
+      <label for="Email">Email address</label>
+      <input type="email" name='_replyto' class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <input type="text" name='message' class="form-control" id="message">
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+</section>
 
 
 </body>
