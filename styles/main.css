@@ -3,37 +3,44 @@
   padding:0;
   box-sizing: border-box;
 }
-
+a {
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  color:whitesmoke
+}
 
 
 .blurb{
   background-image: url('../images/widetrees.jpg');
-  height:40vh;
+  min-height:40vh;
   background-repeat: no-repeat;
   background-position: center;
   color:white;
   z-index: 0;
 }
 h1 {
-  margin-top:20px;
+  margin-top:10vh;
 }
 .card{
   padding: 0 15vw;
   background: rgba(0, 0, 0, .4);
   height: 100%;
+  min-height: 40vh;
   width: 100%;
 }
 nav {
-  text-align: right;
-  background: rgba(0, 0, 0, .4);
   position: absolute;
   width:100%;
   z-index:1;
 
 }
 nav a {
-  color: white;
+ 
   text-decoration: none;
+  font-size:22px;
+  margin:10px;
 }
 .skills{
   margin:0 auto;
@@ -70,4 +77,10 @@ nav a {
 
 .btn:hover{
   background-color:#024d31
+}
+@media (min-width:600px){
+  .blurb{
+    background-size:110%;
+  }
+
 }
