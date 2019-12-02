@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- STYLES-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/main.css">
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script defer src="./scripts/app.js"></script>
   <title>Carson Butterfield</title>
 </head>
@@ -13,7 +18,7 @@
   <nav>
     <a href="http://github.com/carsonbutterfield">Github</a>
     <a href="https://www.linkedin.com/in/carsonbutterfield/">LinkedIn</a>
-    <a href="#">Contact Me</a>
+    <a href="#contact">Contact Me</a>
   </nav>
 </header>
 <body>
@@ -21,7 +26,7 @@
   <div class="card">
     <h1>Carson Butterfield - Fullstack Developer</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus turpis massa tincidunt dui ut ornare lectus. Risus nullam eget felis eget nunc lobortis mattis aliquam.
+      A JavaScript enthusiast who loves code more than anything else in the world. Before going to a software engineering bootcamp, he was a self taught full stack hobbyist. Comfortable working anywhere in the stack Carson delivers clean, optimal code for whatever project hes working on. Calm under pressure with high standards for his work, he makes an excellent addition to any team with hard deadlines.
     </p>
   </div>
 </section>
@@ -57,7 +62,8 @@
     </div>
 </section>
 <section id="contact">
-  <form
+  <h2>Contact Me</h2>
+  <form id='email-form'
   action="https://formspree.io/xjvkyrvg"
   method="POST"
   >
@@ -70,10 +76,34 @@
       <label for="message">Message</label>
       <input type="text" name='message' class="form-control" id="message">
     </div>
-    <button type="submit" class="btn btn-primary">Send</button>
+    <button id='email-submit' type="submit" class="btn btn-primary">Send</button>
+    <p id='form-status'> beep beep</p>
   </form>
 </section>
-
+ <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="result-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="result-label">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id='result-body'class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
